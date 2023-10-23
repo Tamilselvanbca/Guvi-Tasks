@@ -1,0 +1,37 @@
+
+A JavaScript object is a collection of named values having state and behavior (properties and method).
+
+Example:Person,car,pen,bike,Computer etc.
+
+1)Objects:
+The following code assigns a simple value (Hero honda) to a variable named Bike:
+Code:
+var Bike = "Hero honda";
+Objects are variables too. But objects can contain many values.
+
+The following code assigns many values (Hero honda, 2019, blue and soo on) to a variable named Bike:
+Code:
+var Bike = {Make: “Hero honda”, Model: “2019”, Color: “blue”, Fuel: "Petrol", Weight: “120kg”, Mileage: “68Kmpl”, Rating: 4.5};
+The values are written as name:value pairs (name and value separated by a colon).
+
+Syntax:
+var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+So, conclusion and definition for JS objects is “JavaScript objects are containers for named values”.
+
+2)Object Properties
+The name:values pairs (in JavaScript objects) are called properties.
+Code:
+var Bike = {Make: “Hero honda”, Model: “2019”, Color: “Blue”, Fuel: "Petrol", Weight: “120kg”,Mileage: “68Kmpl”, Rating: 4.5};
+
+The object properties can be different primitive values, other objects and functions.
+Properties can usually be changed, added, and deleted, but some are read only.
+
+Syntax to addig Property:
+ObjectName.ObjectProperty = propertyValue;
+The syntax for deleting a property:
+delete ObjectName.ObjectProperty;
+The syntax to access a property:
+objectName.property
+objectName["property”]    
+objectName[expression] 
+Java Script properties is “Properties are the values associated with a JavaScript object”.
