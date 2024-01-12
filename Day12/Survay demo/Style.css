@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#Email {
+  width: 100%;
+}
+.container {
+  padding: 20px;
+}
+.asterisk {
+  color: red;
+}
+.inbox{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.names {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  width: 100%;
+}
+.lname {
+  align-self: end;
+}
+label {
+  font-weight: 700;
+}
+.names, input{
+  width: 100%;
+  outline: none;
+  padding: 4px;
+}
+#stars {
+  font-size: 25px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 0 20px;
+  text-align: center;
+}
+table tr td:first-child {
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+textarea {
+  width: 100%;
+}
+input[type="submit"] {
+  padding: 8px;
+}
+.email,
+.experience,
+.satisfied,
+.likes,
+.comment {
+  margin-top: 30px;
+}
+#submit{
+  margin-top: 10px;
+  width: 80px;
+  padding: 10px;
+}
+
+
+.exBox{
+  position: relative;
+}
+.exclamation{
+  outline: 1.5px solid black;
+  width: 10px;
+  padding: 0;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  font-weight: bolder;
+  right: 8px;
+  top: 7px;
+}

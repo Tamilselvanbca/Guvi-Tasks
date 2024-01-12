@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <form>
+        <div class="container">
+            <div class="inbox">
+                <div class="names">
+                    <div class="name">
+                        <label for="fName lName">Name</label><span class="asterisk">*</span><br>
+                        <div class="exBox">
+                            <input type="text" id="fName" autocomplete="off"><br>
+                            <span class="exclamation">!</span>
+                        </div>
+                        <span>First</span>
+                    </div>
+                    <div class="lname">
+                        <input type="text" id="lName" autocomplete="off"><br>
+                        <span>Last</span>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="Email">Email</label><span class="asterisk">*</span><br>
+                    <input type="email" id="Email" autocomplete="off">
+                </div>
+            </div>
+            <div class="experience">
+                <label for="stars">Your Experience</label><span class="asterisk">*</span><br>
+                <div id="stars">
+                    <i class="fa fa-solid fa-star" style="color: #eeac82;"></i>
+                    <i class="fa fa-solid fa-star" style="color: #eeac82;"></i>
+                    <i class="fa fa-solid fa-star" style="color: #eeac82;"></i>
+                    <i class="fa fa-solid fa-star" style="color: #eeac82;"></i>
+                    <i class="fa fa-solid fa-star" style="color: #eeac82;"></i>
+                </div>
+            </div>
+            <div class="satisfied">
+                <label for="">How satisfied are you with</label><span class="asterisk">*</span><br>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Very Unsatisfied</td>
+                        <td>Unsatisfied</td>
+                        <td>Neutral</td>
+                        <td>Satisfied</td>
+                        <td>Very Satisfied</td>
+                    </tr>
+                    <tr>
+                        <td>Purchase</td>
+                        <td><input type="radio" name="Purchase" id=""></td>
+                        <td><input type="radio" name="Purchase" id=""></td>
+                        <td><input type="radio" name="Purchase" id=""></td>
+                        <td><input type="radio" name="Purchase" id=""></td>
+                        <td><input type="radio" name="Purchase" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td><input type="radio" name="Service" id=""></td>
+                        <td><input type="radio" name="Service" id=""></td>
+                        <td><input type="radio" name="Service" id=""></td>
+                        <td><input type="radio" name="Service" id=""></td>
+                        <td><input type="radio" name="Service" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Company Overall</td>
+                        <td><input type="radio" name="Companys" id=""></td>
+                        <td><input type="radio" name="Companys" id=""></td>
+                        <td><input type="radio" name="Companys" id=""></td>
+                        <td><input type="radio" name="Companys" id=""></td>
+                        <td><input type="radio" name="Companys" id=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="likes">
+                <label for="">How likely are you to</label><span class="asterisk">*</span><br>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Very Unlikely</td>
+                        <td>Unlikely</td>
+                        <td>Neutral</td>
+                        <td>Likely</td>
+                        <td>Very Likely</td>
+                    </tr>
+                    <tr>
+                        <td>Buy from us again</td>
+                        <td><input type="radio" name="buy" id=""></td>
+                        <td><input type="radio" name="buy" id=""></td>
+                        <td><input type="radio" name="buy" id=""></td>
+                        <td><input type="radio" name="buy" id=""></td>
+                        <td><input type="radio" name="buy" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our product to others</td>
+                        <td><input type="radio" name="product" id=""></td>
+                        <td><input type="radio" name="product" id=""></td>
+                        <td><input type="radio" name="product" id=""></td>
+                        <td><input type="radio" name="product" id=""></td>
+                        <td><input type="radio" name="product" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our company to others</td>
+                        <td><input type="radio" name="company" id=""></td>
+                        <td><input type="radio" name="company" id=""></td>
+                        <td><input type="radio" name="company" id=""></td>
+                        <td><input type="radio" name="company" id=""></td>
+                        <td><input type="radio" name="company" id=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="comment">
+                <label for="comments">Additional comments or suggestions</label><br>
+                <textarea name="" id="comments" cols="100" rows="6"></textarea>
+            </div>
+            <input id="submit" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
