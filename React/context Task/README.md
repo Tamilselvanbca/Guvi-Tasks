@@ -1,1 +1,1 @@
-<h1>🛒 Shop Add to Cart Page 📱</h1>
+<h1> Shop Add to Cart Page </h1>
