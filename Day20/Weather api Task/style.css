@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    linear-gradient(
+      90deg,
+      hsl(194, 74%, 56%),
+      hsl(266, 74%, 56%),
+      hsl(338, 74%, 56%),
+      hsl(50, 74%, 56%),
+      hsl(122, 74%, 56%)
+    );
+}
+
+header {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px black;
+  background-image: linear-gradient(
+      22.5deg,
+      rgb(202, 162, 38) 0%,
+      rgb(202, 162, 38) 30%,
+      rgb(200, 172, 46) 30%,
+      rgb(200, 172, 46) 41%,
+      rgb(197, 183, 54) 41%,
+      rgb(197, 183, 54) 51%,
+      rgb(195, 193, 62) 51%,
+      rgb(195, 193, 62) 56%,
+      rgb(193, 203, 69) 56%,
+      rgb(193, 203, 69) 83%,
+      rgb(190, 214, 77) 83%,
+      rgb(190, 214, 77) 95%,
+      rgb(188, 224, 85) 95%,
+      rgb(188, 224, 85) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgb(202, 162, 38) 0%,
+      rgb(202, 162, 38) 30%,
+      rgb(200, 172, 46) 30%,
+      rgb(200, 172, 46) 41%,
+      rgb(197, 183, 54) 41%,
+      rgb(197, 183, 54) 51%,
+      rgb(195, 193, 62) 51%,
+      rgb(195, 193, 62) 56%,
+      rgb(193, 203, 69) 56%,
+      rgb(193, 203, 69) 83%,
+      rgb(190, 214, 77) 83%,
+      rgb(190, 214, 77) 95%,
+      rgb(188, 224, 85) 95%,
+      rgb(188, 224, 85) 100%
+    ),
+    linear-gradient(
+      157.5deg,
+      rgb(202, 162, 38) 0%,
+      rgb(202, 162, 38) 30%,
+      rgb(200, 172, 46) 30%,
+      rgb(200, 172, 46) 41%,
+      rgb(197, 183, 54) 41%,
+      rgb(197, 183, 54) 51%,
+      rgb(195, 193, 62) 51%,
+      rgb(195, 193, 62) 56%,
+      rgb(193, 203, 69) 56%,
+      rgb(193, 203, 69) 83%,
+      rgb(190, 214, 77) 83%,
+      rgb(190, 214, 77) 95%,
+      rgb(188, 224, 85) 95%,
+      rgb(188, 224, 85) 100%
+    ),
+    linear-gradient(90deg, rgb(197, 2, 127), rgb(52, 76, 85));
+  background-blend-mode: overlay, overlay, overlay, normal;
+  padding: 10px;
+}
+.weatherBox {
+  display: flex;
+  flex-direction: row;
+}
+.input-box {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label {
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+  text-shadow: 5px 5px 20px yellow, -5px -5px 20px yellow;
+}
+input {
+  transition: 0.8s;
+  text-align: center;
+  width: 90%;
+  padding: 10px 30px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background-image: repeating-linear-gradient(
+      59deg,
+      hsla(323, 0%, 57%, 0.12) 0px,
+      transparent 7px,
+      hsla(323, 0%, 57%, 0.12) 10px,
+      transparent 17px,
+      hsla(323, 0%, 57%, 0.12) 20px,
+      transparent 27px,
+      hsla(179, 100%, 66%, 0.12) 30px
+    ),
+    repeating-linear-gradient(
+      12deg,
+      hsla(323, 0%, 57%, 0.12) 0px,
+      transparent 7px,
+      hsla(323, 0%, 57%, 0.12) 10px,
+      transparent 17px,
+      hsla(323, 0%, 57%, 0.12) 20px,
+      transparent 27px,
+      hsla(323, 0%, 57%, 0.12) 30px
+    ),
+    repeating-linear-gradient(
+      133deg,
+      hsla(323, 0%, 57%, 0.12) 0px,
+      transparent 7px,
+      hsla(323, 0%, 57%, 0.12) 10px,
+      transparent 17px,
+      hsla(323, 0%, 57%, 0.12) 20px,
+      transparent 27px,
+      hsla(323, 0%, 57%, 0.12) 30px
+    ),
+    linear-gradient(90deg, rgb(37, 37, 37), rgb(37, 37, 37));
+}
+input:focus {
+  box-shadow: 1px 1px 30px #00fff2d5;
+}
+.weather-btn {
+  margin-top: 20px;
+  border: 3px solid rgb(0, 183, 255);
+  padding: 8px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.weather-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+.weather {
+  text-shadow: 5px 5px 20px rgb(255, 0, 0), -5px -5px 20px yellow;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-left: 3px solid white;
+}
+.weather-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.weather-image .image-box {
+    background-color: black;
+  display: grid;
+  place-items: center;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(255, 175, 26, 0.544),
+    inset 5px 4px 20px rgba(0, 255, 255, 0.416);
+    
+}
+.image-box img {
+  height: 100%;
+}
+.weathers {
+  padding-left: 90px;
+  padding-bottom: 60px;
+  position: absolute;
+  text-shadow: 2px 2px 5px skyblue, 3px 3px 10px skyblue;
+  color: #ffffff;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 10px;
+  }
+  .weatherBox {
+    flex-direction: column;
+    height: 100%;
+  }
+  .input-box {
+    height: 40vh;
+  }
+  .weather-box {
+    height: 45vh;
+  }
+  .weather {
+    border: none;
+  }
+  .weather-image .image-box {
+    width: 100px;
+    height: 100px;
+  }
+  input,
+  label {
+    font-size: 15px;
+  }
+}
